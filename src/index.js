@@ -10,9 +10,6 @@ for (let i=10; i<arrayRange; i++) {
   array.push(i)
 }
 
-
-const bars = $('#bars');
-
 const bar = $('<div></div>')
 bar.css("height", `"${array[0]*2}"px`)
 
