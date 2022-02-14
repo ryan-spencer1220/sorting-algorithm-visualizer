@@ -4,12 +4,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css'; 
 import { randomArray } from './js/business-logic.js';
 
-/*eslint-disable */
-
 function clearFields() {
   array = [];
   $('#bars').html('');
-};
+}
 
 function barGeneration(array) {
   for (let i = 0; i < array.length; i ++) {
@@ -28,10 +26,10 @@ $('#array-range').on("input", function(){
   arrayRange = $("#array-range").val();
   array = randomArray(arrayRange);
   barGeneration(array);
-})
+});
 
-$('#sort-select').on("change", function(){
-
-})
-
-/*eslint-enable */
+$('#sort-select').on('input', function() {
+  $('#bubble, #insertion, #merge, #quicksort, #selection').hide();
+  let sortSelect = $('#sort-select').val();
+  $(`#${sortSelect}`).show();
+});

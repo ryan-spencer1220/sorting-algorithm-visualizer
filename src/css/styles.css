@@ -20,3 +20,7 @@ body {
 select {
   background-color: cornflowerblue;
 }
+
+#bubble, #insertion, #merge, #quicksort, #selection {
+  display: none;
+}
