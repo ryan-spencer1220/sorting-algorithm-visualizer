@@ -10,20 +10,3 @@ export function selectionSort(array) {
   }
   return array;
 }
-
-//UI Logic
-let actualRandomArray = randomArray();
-selectionSort(actualRandomArray);
-
-// function selectionSort(array) {
-//     for (let currentIndex = 0; currentIndex < array.length; currentIndex++) {
-//       for (let indexToCompare = currentIndex+1; indexToCompare < array.length; indexToCompare++) {
-//         if (array[currentIndex] > array[indexToCompare]) {
-//           const higherValue = array[currentIndex];
-//           array[currentIndex] = array[indexToCompare];
-//           array[indexToCompare] = higherValue;
-//         }
-//       }
-//     }
-//     return array;
-//   }
