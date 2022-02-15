@@ -1,4 +1,7 @@
-export function insertionSort(array) {
+import $ from "jquery";
+import { waitforme } from "./business-logic.js";
+
+export async function insertionSort(array) {
   for (let i = 1; i < array.length; i++) {
     let sortedIndex = i - 1;
     let whatToPush = array[i];

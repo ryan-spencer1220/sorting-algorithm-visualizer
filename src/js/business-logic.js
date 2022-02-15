@@ -5,3 +5,11 @@ export function randomArray(size) {
   }
   return array;
 }
+
+export function waitforme(milisec) {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("");
+    }, milisec);
+  });
+}

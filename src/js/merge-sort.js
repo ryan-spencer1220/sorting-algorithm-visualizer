@@ -1,4 +1,7 @@
-function splitArray(arrayCut1, arrayCut2) {
+import $ from "jquery";
+import { waitforme } from "./business-logic.js";
+
+export async function splitArray(arrayCut1, arrayCut2) {
   let merged = [];
   let i = 0;
   let j = 0;
@@ -15,7 +18,7 @@ function splitArray(arrayCut1, arrayCut2) {
   return merged;
 }
 
-function mergeSort(array) {
+export async function mergeSort(array) {
   if (array.length <= 1) {
     return array;
   }

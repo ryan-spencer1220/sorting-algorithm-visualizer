@@ -1,18 +1,23 @@
-export function bubbleSort(array, passes) {
-  passes = 0;
-  let swapped = false;
-  for (let i = 0; i < array.length - passes; i++) {
-    if (array[i] > array[i + 1]) {
-      let min = array[i + 1];
-      array[i + 1] = array[i];
-      array[i] = min;
-      swapped = true;
+import $ from "jquery";
+import { waitforme } from "./business-logic.js";
+
+export async function bubbleSort(array, speedInput) {
+  for (let i = 0; i < array.length - 1; i++) {
+    for (let j = 0; j < array.length - i - 1; j++) {
+      $(`#bar-index-${j}`).css("background", "blue");
+      $(`#bar-index-${j + 1}`).css("background", "blue");
+      if (array[j] > array[j + 1]) {
+        await waitforme(speedInput);
+        let min = array[j + 1];
+        array[j + 1] = array[j];
+        array[j] = min;
+        $(`#bar-index-${j}`).css("height", `${array[j] * 2}px`);
+        $(`#bar-index-${j + 1}`).css("height", `${array[j + 1] * 2}px`);
+      }
+      $(`#bar-index-${j}`).css("background", "cyan");
+      $(`#bar-index-${j + 1}`).css("background", "green");
     }
+    $(`#bar-index-${array.length - 1 - i}`).css("background", "green");
   }
-  passes++;
-  if (swapped === true) {
-    return bubbleSort(array, passes);
-  } else {
-    return array;
-  }
+  $("#bar-index-0").css("background", "green");
 }

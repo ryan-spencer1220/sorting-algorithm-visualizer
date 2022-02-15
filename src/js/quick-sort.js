@@ -1,4 +1,7 @@
-export function quickSort(array, left = 0, right = array.length - 1) {
+import $ from "jquery";
+import { waitforme } from "./business-logic.js";
+
+export async function quickSort(array, left = 0, right = array.length - 1) {
   let partitionPoint;
   if (array.length > 1) {
     partitionPoint = sortPartition(array, left, right);
@@ -12,7 +15,7 @@ export function quickSort(array, left = 0, right = array.length - 1) {
   return array;
 }
 
-export function sortPartition(array, left, right) {
+export async function sortPartition(array, left, right) {
   const pivot = findPivot(array, left, right);
   while (left <= right) {
     while (array[left] < pivot) {
@@ -30,13 +33,13 @@ export function sortPartition(array, left, right) {
   return left;
 }
 
-export function swap(array, left, right) {
+export async function swap(array, left, right) {
   const replaceValue = array[left];
   array[left] = array[right];
   array[right] = replaceValue;
   return array;
 }
 
-export function findPivot(array, left, right) {
+export async function findPivot(array, left, right) {
   return array[Math.floor((left + right) / 2)];
 }
