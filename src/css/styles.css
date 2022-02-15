@@ -2,25 +2,34 @@ body {
   background-color: cornflowerblue;
 }
 
-.bar{
+.bar {
   background-color: black;
-  width:25px;
+  width: 25px;
   border: 1px solid cornflowerblue;
 }
 
-#bars{
+#bars {
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 90%;
   margin: auto;
   align-items: flex-end;
+  padding-top: 5%;
 }
 
 select {
   background-color: cornflowerblue;
 }
 
-#bubble, #insertion, #merge, #quicksort, #selection {
+#bubble,
+#insertion,
+#merge,
+#quicksort,
+#selection {
   display: none;
+}
+
+.card {
+  padding: 5%;
 }

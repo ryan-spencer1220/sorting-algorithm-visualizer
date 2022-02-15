@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/styles.css";
 import { randomArray } from "./js/business-logic.js";
 import { selectionSort } from "./js/selection-sort.js";
-// import { insertionSort } from "./js/insertion-sort.js";
+import { insertionSort } from "./js/insertion-sort.js";
 import { bubbleSort } from "./js/bubble-sort.js";
 // import { splitArray, mergeSort } from "./js/merge-sort.js";
 // import { findPivot, swap, sortPartition, quickSort } from "./js/quick-sort.js";
@@ -56,9 +56,9 @@ $("#run").on("click", function () {
   //let speedInput = 500 - $("#speed-range").val();
   if (runInput === "bubble") {
     bubbleSort(array);
+  } else if (runInput === "insertion") {
+    insertionSort(array);
   }
-  // } else if (runInput === "insertion") {
-  //   insertionSort(array);
   // } else if (runInput === "merge") {
   //   mergeSort(array);
   // } else if (runInput === "quicksort") {

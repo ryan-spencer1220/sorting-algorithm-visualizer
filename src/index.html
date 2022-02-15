@@ -4,7 +4,14 @@
     <title>Sorting Visualizer</title>
   </head>
 <body>
-    <div class="control-container">
+    <div class="container">
+      <div class="container-fluid bg-dark text-light p-5">
+        <div class="container bg-dark p-6">
+          <h1 class="display-4">Sorting Algorithm Visualizer</h1>
+          <hr>
+        </div>
+      </div>
+      <br>
       <button type="button" id="new-array">New Array</button>
       <label for="array-range">Array Size</label>
       <input type="range" min="5" max="150" value="50" class="slider" id="array-range">
@@ -21,14 +28,17 @@
       </select>
       <button type="button" id="run">Run</button>
     <div id="bars"></div>  
+    <br>
       <div id="bubble">
-        <h3>Bubble Sort Method</h3>
-        <p>
-          Bubble sort, sometimes referred to as sinking sort, is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted. The algorithm, which is a comparison sort, is named for the way smaller or larger elements "bubble" to the top of the list.
-          <br>
-          <br>
-          This simple algorithm performs poorly in real world use and is used primarily as an educational tool. More efficient algorithms such as quicksort, timesort, or merge sort are used by the sorting libraries built into popular programming languages such as Python and Java.
-        </p>
+        <div class="card text-white bg-dark mb-3">
+          <h3>Bubble Sort Method</h3>
+          <p>
+            Bubble sort, sometimes referred to as sinking sort, is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted. The algorithm, which is a comparison sort, is named for the way smaller or larger elements "bubble" to the top of the list.
+            <br>
+            <br>
+            This simple algorithm performs poorly in real world use and is used primarily as an educational tool. More efficient algorithms such as quicksort, timesort, or merge sort are used by the sorting libraries built into popular programming languages such as Python and Java.
+          </p>
+        </div>
       </div>
       <div id="insertion">
         <h3>Insertion Sort Method</h3>
@@ -68,8 +78,6 @@
           The algorithm divides the input list into two parts: a sorted sublist of items which is built up from left to right at the front (left) of the list and a sublist of the remaining unsorted items that occupy the rest of the list. Initially, the sorted sublist is empty and the unsorted sublist is the entire input list. The algorithm proceeds by finding the smallest (or largest, depending on sorting order) element in the unsorted sublist, exchanging (swapping) it with the leftmost unsorted element (putting it in sorted order), and moving the sublist boundaries one element to the right.
         </p>
       </div>
-
     </div>
-
 </body>
 </html>
