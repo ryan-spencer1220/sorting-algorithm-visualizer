@@ -1,5 +1,5 @@
-import $ from "jquery";
-import { waitforme } from "./business-logic.js";
+// import $ from "jquery";
+// import { waitforme } from "./business-logic.js";
 
 export async function splitArray(arrayCut1, arrayCut2) {
   let merged = [];

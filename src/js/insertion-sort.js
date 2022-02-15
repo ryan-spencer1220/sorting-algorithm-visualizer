@@ -1,5 +1,5 @@
-import $ from "jquery";
-import { waitforme } from "./business-logic.js";
+// import $ from "jquery";
+// import { waitforme } from "./business-logic.js";
 
 export async function insertionSort(array) {
   for (let i = 1; i < array.length; i++) {

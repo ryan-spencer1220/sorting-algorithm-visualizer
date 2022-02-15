@@ -1,5 +1,5 @@
-import $ from "jquery";
-import { waitforme } from "./business-logic.js";
+// import $ from "jquery";
+// import { waitforme } from "./business-logic.js";
 
 export async function quickSort(array, left = 0, right = array.length - 1) {
   let partitionPoint;
