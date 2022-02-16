@@ -7,7 +7,7 @@ import { selectionSort } from "./js/selection-sort.js";
 import { insertionSort } from "./js/insertion-sort.js";
 import { bubbleSort } from "./js/bubble-sort.js";
 import { mergeSort } from "./js/merge-sort.js";
-// import { quickSort } from "./js/quick-sort.js";
+import { quickSort } from "./js/quick-sort.js";
 
 function clearFields() {
   array = [];
@@ -66,9 +66,9 @@ $("#run").on("click", function () {
     insertionSort(array);
   } else if (runInput === "merge") {
     mergeSort(array);
-  } // } else if (runInput === "quicksort") {
-  //   quickSort(array);
-  else if (runInput === "selection") {
+  } else if (runInput === "quicksort") {
+    quickSort(array);
+  } else if (runInput === "selection") {
     selectionSort(array);
   }
 });
