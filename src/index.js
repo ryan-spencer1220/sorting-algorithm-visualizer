@@ -74,10 +74,12 @@ function disable() {
   $("#new-array").prop("disabled", true);
   $("#array-range").prop("disabled", true);
   $("#run").prop("disabled", true);
+  $("#sort-select").prop("disabled", true);
 }
 
 function enable() {
   $("#new-array").prop("disabled", false);
   $("#array-range").prop("disabled", false);
   $("#run").prop("disabled", false);
+  $("#sort-select").prop("disabled", false);
 }

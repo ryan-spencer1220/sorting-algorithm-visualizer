@@ -1,27 +1,29 @@
-# (Application Name)
+# Sorting Algorithm Visualizer
 
-#### (Brief Description of Application)
+#### Web application designed to visualize various sorting algorithms
 
-#### By (Your Name Here)
+#### By Ryan Spencer, Andy Plymate, Zachary Green, Will Greenberg, Eric Crudup
 
 ### _Link to GitHub Repository_
 
-- LINK
+- https://github.com/ryan-spencer1220/sorting-algorithm-visualizer
 
 ## Technologies Used
 
-- _VS Code Software_
-- _Git_
-- _Github_
-- _Google Chrome Browser_
-- _HTML_
-- _CSS_
-- _Markdown_
-- _Bootstrap_
-- _JavaScript_
-- _jQuery_
+- VS Code Software
+- Git
+- Github
+- Google Chrome Browser
+- HTML
+- CSS
+- Markdown
+- Bootstrap
+- JavaScript
+- jQuery
 
 ## Description
+
+This web application was created to help users visualize the various differences between common sorting algortithms. Users can adjust the size of the array, the speed the algorithm sorts the array, and the particular algorithm they would like to visualize. Each visualization is designed to help users understand the differences between bubble sort, selection sort, insertion sort, quick sort, and merge sort. After the visualization is complete, users can select a new sorting algorithm, generate a new array, or read a small description outlining the current sorting algorithm.
 
 ## Setup/Installation Requirements
 
@@ -41,18 +43,6 @@
 
 3. _Follow the steps above to view, edit, and open the files as needed._
 
-**API Key and Private .env file**
-
-1. _To run this project, will need to sign up for an account at https://www.exchangerate-api.com/_
-
-2. _Continue to their sign-up page at https://app.exchangerate-api.com/sign-up. You can choose a plan that works for you, but they have a free plan that allows up to 1,500 API calls a month_
-
-3. _Add an PRIVATE .env file to your top most directory._
-
-4. _Save the API key provided after sign-up by typing the following in your .env following:_ API_KEY=INSERT YOUR API KEY HERE
-
-5. _Ensure that you have added .env to your .gitignore file BEFORE PROCEEDING_
-
 **Build the Environment and Run the Project**
 
 1. _You will need to run the command "npm install" in your terminal to download the appropriate node modules._
@@ -65,7 +55,8 @@
 
 ## Known Bugs
 
-- _No Known Bugs._
+- Buttons re-enable on quicksort algorithm
+- Quicksort colors do not match up in an intuitive way
 
 ### License
 

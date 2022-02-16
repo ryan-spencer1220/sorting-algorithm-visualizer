@@ -4,7 +4,7 @@ import { speedAdjust } from "../index.js";
 
 export async function selectionSort(array) {
   for (let i = 0; i < array.length; i++) {
-    $(`#bar-index-${i}`).css("background", "white");
+    $(`#bar-index-${i}`).css("background", "cyan");
     for (let j = i + 1; j < array.length; j++) {
       $(`#bar-index-${j}`).css("background", "grey");
       await waitforme(speedAdjust());
@@ -17,7 +17,7 @@ export async function selectionSort(array) {
       }
       $(`#bar-index-${j}`).css("background", "black");
     }
-    $(`#bar-index-${i}`).css("background", "cyan");
+    $(`#bar-index-${i}`).css("background", "blue");
   }
   return array;
 }
