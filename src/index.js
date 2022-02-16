@@ -57,18 +57,31 @@ $("#sort-select").on("input", function () {
   $(`#${sortSelect}`).show();
 });
 
-$("#run").on("click", function () {
+$("#run").on("click", async function () {
   let runInput = $("#sort-select").val();
-  //let speedInput = 500 - $("#speed-range").val();
+  disable();
   if (runInput === "bubble") {
-    bubbleSort(array);
+    await bubbleSort(array);
   } else if (runInput === "insertion") {
-    insertionSort(array);
+    await insertionSort(array);
   } else if (runInput === "merge") {
-    mergeSort(array);
+    await mergeSort(array);
   } else if (runInput === "quicksort") {
-    quickSort(array);
+    await quickSort(array);
   } else if (runInput === "selection") {
-    selectionSort(array);
+    await selectionSort(array);
   }
+  enable();
 });
+
+function disable() {
+  $("#new-array").prop("disabled", true);
+  $("#array-range").prop("disabled", true);
+  $("#run").prop("disabled", true);
+}
+
+function enable() {
+  $("#new-array").prop("disabled", false);
+  $("#array-range").prop("disabled", false);
+  $("#run").prop("disabled", false);
+}
