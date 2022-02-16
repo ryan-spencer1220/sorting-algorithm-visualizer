@@ -1,11 +1,19 @@
 body {
-  background-color: cornflowerblue;
+  background-color: rgb(235, 235, 235);
 }
 
 .bar {
   background-color: black;
   width: 25px;
-  border: 1px solid cornflowerblue;
+  border: 1px solid lightgray;
+  border-radius: 5px 5px 5px 5px;}
+
+.jumbotron{
+  border-radius: 6px ;
+}
+
+.display-4{
+  text-align: center;
 }
 
 #bars {
@@ -19,7 +27,15 @@ body {
 }
 
 select {
-  background-color: cornflowerblue;
+  background-color: lightgray;
+  border-radius: 5px;
+}
+
+.form-group {
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+  display:flex;
+  justify-content:space-between;
 }
 
 #bubble,
