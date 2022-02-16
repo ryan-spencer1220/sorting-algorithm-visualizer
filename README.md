@@ -34,6 +34,8 @@ This web application was created to help users visualize the various differences
 3. _Should you wish to edit the code you cloned, you will need coding software. VS Code is an example of a free code editor, which can be downloaded at https://code.visualstudio.com/_.
 4. _Once your coding software is installed, open the folder of the cloned repository, which will contain the HTML files, the bootstrap.css framework, any images, audio, as well separate individual stylesheets for each HTML file._
 5. _To view the finished site locally, simply navigate to the folder/directory which you cloned the project, and open the index.html file in your browser._
+<img width="1384" alt="Screen Shot 2022-02-16 at 3 36 47 PM" src="https://user-images.githubusercontent.com/86761275/154376185-8c32a941-fc32-4421-94f7-6e53655408bc.png">
+<img width="1349" alt="Screen Shot 2022-02-16 at 3 37 27 PM" src="https://user-images.githubusercontent.com/86761275/154376216-b6488096-c21a-4d04-bdd6-436d3abe77cf.png">
 
 **Downloading**
 
