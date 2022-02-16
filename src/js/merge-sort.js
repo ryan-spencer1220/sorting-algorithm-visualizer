@@ -1,5 +1,6 @@
 import $ from "jquery";
 import { waitforme } from "./business-logic.js";
+import { speedAdjust } from "../index.js";
 
 export async function mergeSort(
   array,
@@ -34,11 +35,6 @@ async function splitArray(arrayCut1, arrayCut2, trueStartIndex, trueCenter) {
   let i = 0;
   let j = 0;
 
-  let speedInput = 260 - $("#speed-range").val();
-  $("#speed-range").on("input", function () {
-    speedInput = 260 - $("#speed-range").val();
-  });
-
   // for(let i = 0; i < arrayCut1.length; i++){
   //   $(`#bar-index-${i}`).css("background", `yellow`);
   // }
@@ -51,19 +47,19 @@ async function splitArray(arrayCut1, arrayCut2, trueStartIndex, trueCenter) {
         "height",
         `${arrayCut1[i] * 2}px`
       );
-      await waitforme(speedInput);
+      await waitforme(speedAdjust());
       i++;
     } else {
       merged.push(arrayCut2[j]);
       $(`#bar-index-${trueCenter + j}`).css("background", `orange`);
       $(`#bar-index-${trueCenter + j}`).css("height", `${arrayCut2[j] * 2}px`);
-      await waitforme(speedInput);
+      await waitforme(speedAdjust());
       j++;
     }
   }
   merged = merged.concat(arrayCut1.slice(i).concat(arrayCut2.slice(j)));
   for (let k = 0; k < merged.length; k++) {
-    await waitforme(speedInput);
+    await waitforme(speedAdjust());
     $(`#bar-index-${trueStartIndex + k}`).css("background", `green`);
     $(`#bar-index-${trueStartIndex + k}`).css("height", `${merged[k] * 2}px`);
   }

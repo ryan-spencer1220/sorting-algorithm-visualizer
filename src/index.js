@@ -14,17 +14,13 @@ function clearFields() {
   $("#bars").html("");
 }
 
-// export function speedAdjust(speedInput) {
-//   $("#speed-range").on("input", function () {
-//     speedInput = 260 - $("#speed-range").val();
-//   });
-// }
-
-// function swapElements(element1, element2) {
-//   let tempElement = element1.css("height");
-//   element1.css("height") = element2.css("height");
-//   element2.css("height") = tempElement;
-// }
+export function speedAdjust() {
+  let speedInput = 260 - $("#speed-range").val();
+  $("#speed-range").on("input", function () {
+    speedInput = 260 - $("#speed-range").val();
+  });
+  return speedInput;
+}
 
 function barGeneration(array) {
   for (let i = 0; i < array.length; i++) {
