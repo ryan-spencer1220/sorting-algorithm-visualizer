@@ -40,7 +40,7 @@ This web application was created to help users visualize the various differences
 
 **Downloading**
 
-1. _In your browser, navigate to LINK, and click the green "Code" button, which will provide a drop down menu. Click on "Download ZIP" at the bottom of the menu, and save it to your desired location.
+1. In your browser, navigate to LINK, and click the green "Code" button, which will provide a drop down menu. Click on "Download ZIP" at the bottom of the menu, and save it to your desired location.
 2. _Once downloaded, unzip and extract the files._
 3. _Follow the steps above to view, edit, and open the files as needed._
 
