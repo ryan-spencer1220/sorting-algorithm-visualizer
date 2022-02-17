@@ -64,6 +64,7 @@ $("#run").on("click", async function () {
     await mergeSort(array);
   } else if (runInput === "quicksort") {
     await quickSort(array);
+    $(`.bar`).css("background", "#3CD184");
   } else if (runInput === "selection") {
     await selectionSort(array);
   }

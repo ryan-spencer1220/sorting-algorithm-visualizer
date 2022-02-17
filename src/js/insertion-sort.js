@@ -10,28 +10,26 @@ export async function insertionSort(array) {
 
     while (array[sortedIndex] > whatToPush) {
       enteredLoop = true;
-      $(`#bar-index-${sortedIndex + 1}`).css("background", "#FCB99C");
+      $(`#bar-index-${sortedIndex + 1}`).css("background", "blue");
 
       await waitforme(speedAdjust());
-      $(`#bar-index-${sortedIndex}`).css("background", "#F06980");
-      $(`#bar-index-${sortedIndex + 1}`).css("background", "#F06980");
+      $(`#bar-index-${sortedIndex}`).css("background", "#16b47e");
+      $(`#bar-index-${sortedIndex + 1}`).css("background", "#16b47e");
 
       let newArray = array[sortedIndex];
       array[sortedIndex + 1] = newArray;
       $(`#bar-index-${sortedIndex + 1}`).css(
         "height",
         `${array[sortedIndex + 1] * 2}px`
-      ); //newArray doesn't work in 2nd template literal!!!!!!!!!!!
+      );
       sortedIndex--;
     }
 
-    //makes sure color changes happen even if we don't enter while loop
     if (enteredLoop === false) {
-      $(`#bar-index-${sortedIndex}`).css("background", "#F06980");
+      $(`#bar-index-${sortedIndex}`).css("background", "#16b47e");
 
-      //makes sure last element is colored if it is the tallest element in the array
       if (i === array.length - 1) {
-        $(`#bar-index-${i}`).css("background", "#F06980");
+        $(`#bar-index-${i}`).css("background", "#16b47e");
       }
     }
     array[sortedIndex + 1] = whatToPush;

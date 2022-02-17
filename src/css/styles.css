@@ -6,17 +6,19 @@ body {
   background-color: black;
   width: 25px;
   border: 1px solid lightgray;
-  border-radius: 5px 5px 5px 5px;}
-
-.jumbotron{
-  border-radius: 6px ;
+  border-radius: 5px 5px 5px 5px;
 }
 
-.display-4{
+.jumbotron {
+  border-radius: 6px;
+}
+
+.display-4 {
   text-align: center;
 }
 
 #bars {
+  height: 250px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -34,8 +36,8 @@ select {
 .form-group {
   padding-left: 2.5em;
   padding-right: 2.5em;
-  display:flex;
-  justify-content:space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 #bubble,

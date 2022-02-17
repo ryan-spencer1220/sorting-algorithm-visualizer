@@ -15,10 +15,10 @@ export async function bubbleSort(array) {
         $(`#bar-index-${j}`).css("height", `${array[j] * 2}px`);
         $(`#bar-index-${j + 1}`).css("height", `${array[j + 1] * 2}px`);
       }
-      $(`#bar-index-${j}`).css("background", "cyan");
-      $(`#bar-index-${j + 1}`).css("background", "green");
+      $(`#bar-index-${j}`).css("background", "#25b5cd");
+      $(`#bar-index-${j + 1}`).css("background", "#16b47e");
     }
-    $(`#bar-index-${array.length - 1 - i}`).css("background", "green");
+    $(`#bar-index-${array.length - 1 - i}`).css("background", "#16b47e");
   }
-  $("#bar-index-0").css("background", "green");
+  $("#bar-index-0").css("background", "#16b47e");
 }

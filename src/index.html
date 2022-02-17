@@ -3,79 +3,164 @@
   <head>
     <title>Sorting Visualizer</title>
   </head>
-<body>
+  <body>
     <div class="container">
-        <div class="jumbotron">
-          <h1 class="display-4">Sorting Algorithm Visualizer</h1>
-        </div>
-      <br>
+      <div class="jumbotron">
+        <h1 class="display-4">Sorting Algorithm Visualizer</h1>
+      </div>
+      <br />
       <div class="form-group">
         <label for="array-range">Array Size</label>
-        <input type="range" min="5" max="150" value="50" class="slider" id="array-range">
-        <button class="btn btn-secondary" type="button" id="new-array">New Array</button>
+        <input
+          type="range"
+          min="5"
+          max="150"
+          value="50"
+          class="slider"
+          id="array-range"
+        />
+        <button class="btn btn-secondary" type="button" id="new-array">
+          New Array
+        </button>
         <label for="speed-range">Speed of Sort</label>
-        <input type="range" min="0" max="260" value="50" class="slider" id="speed-range">
-        <select  name="sort-select" id="sort-select">
+        <input
+          type="range"
+          min="0"
+          max="260"
+          value="50"
+          class="slider"
+          id="speed-range"
+        />
+        <select name="sort-select" id="sort-select">
           <option value="">Select method</option>
           <option value="bubble">Bubble Sort</option>
+          <option value="selection">Selection Sort</option>
           <option value="insertion">Insertion Sort</option>
           <option value="merge">Merge Sort</option>
           <option value="quicksort">Quick Sort</option>
-          <option value="selection">Selection Sort</option>
         </select>
         <button class="btn btn-secondary" type="button" id="run">Run</button>
       </div>
-    <div id="bars"></div>  
-    <br>
+      <div id="bars"></div>
+      <br />
       <div id="bubble">
         <div>
           <h3>Bubble Sort Method</h3>
           <p>
-            Bubble sort, sometimes referred to as sinking sort, is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted. The algorithm, which is a comparison sort, is named for the way smaller or larger elements "bubble" to the top of the list.
-            <br>
-            <br>
-            This simple algorithm performs poorly in real world use and is used primarily as an educational tool. More efficient algorithms such as quicksort, timesort, or merge sort are used by the sorting libraries built into popular programming languages such as Python and Java.
+            Bubble sort, sometimes referred to as sinking sort, is a simple
+            sorting algorithm that repeatedly steps through the list, compares
+            adjacent elements and swaps them if they are in the wrong order. The
+            pass through the list is repeated until the list is sorted. The
+            algorithm, which is a comparison sort, is named for the way smaller
+            or larger elements "bubble" to the top of the list.
+            <br />
+            <br />
+            This simple algorithm performs poorly in real world use and is used
+            primarily as an educational tool. More efficient algorithms such as
+            quicksort, timesort, or merge sort are used by the sorting libraries
+            built into popular programming languages such as Python and Java.
           </p>
+          <a href="https://en.wikipedia.org/wiki/Bubble_sort" target="_blank"
+            >Bubble Sort Additional Resource</a
+          >
+          <br />
+          <br />
         </div>
       </div>
       <div id="insertion">
         <h3>Insertion Sort Method</h3>
         <p>
-          Insertion sort is a simple sorting algorithm that works similar to the way you sort playing cards in your hands. The array is virtually split into a sorted and an unsorted part. Values from the unsorted part are picked and placed at the correct position in the sorted part.
+          Insertion sort is a simple sorting algorithm that works similarly to
+          the way you sort playing cards in your hands. The array is virtually
+          split into a sorted and an unsorted part. Values from the unsorted
+          part are picked and placed at the correct position in the sorted part.
+          <br />
+          <br />
+          Insertion sort iterates, consuming one input element each repetition,
+          and grows a sorted output list. At each iteration, insertion sort
+          removes one element from the input data, finds the location it belongs
+          within the sorted list, and inserts it there. It repeats until no
+          input elements remain.
         </p>
+        <a href="https://en.wikipedia.org/wiki/Insertion_sort" target="_blank"
+          >Insertion Sort Additional Resource</a
+        >
+        <br />
+        <br />
       </div>
       <div id="merge">
         <h3>Merge Sort Method</h3>
         <p>
-          Merge sort is a divide-and-conquer algorithm based on the idea of breaking down a list into several sub-lists until each sublist consists of a single element and merging those sublists in a manner that results into a sorted list.
-          <br>
-          <ul>Idea:
-            <li> Divide the unsorted list into  sublists, each containing  element.</li>
-            <li>Take adjacent pairs of two singleton lists and merge them to form a list of 2 elements.  will now convert into  lists of size 2.</li>
-            <li>Repeat the process till a single sorted list of obtained.</li>
-          </ul>  
-          <br>
-          While comparing two sublists for merging, the first element of both lists is taken into consideration. While sorting in ascending order, the element that is of a lesser value becomes a new element of the sorted list. This procedure is repeated until both the smaller sublists are empty and the new combined sublist comprises all the elements of both the sublists.
+          Merge sort is a divide-and-conquer algorithm based on the idea of
+          breaking down a list into several sub-lists until each sublist
+          consists of a single element and merging those sublists in a manner
+          that results into a sorted list.
+          <br />
+          <br />
+          While comparing two sublists for merging, the first element of both
+          lists is taken into consideration. While sorting in ascending order,
+          the element that is of a lesser value becomes a new element of the
+          sorted list. This procedure is repeated until both the smaller
+          sublists are empty and the new combined sublist comprises all the
+          elements of both the sublists.
         </p>
+        <a href="https://en.wikipedia.org/wiki/Merge_sort" target="_blank"
+          >Merge Sort Additional Resource</a
+        >
+        <br />
+        <br />
       </div>
       <div id="quicksort">
         <h3>Quicksort Sort Method</h3>
         <p>
-          Quicksort is an in-place sorting algorithm. Developed by British computer scientist Tony Hoare in 1959 and published in 1961, it is still a commonly used algorithm for sorting. When implemented well, it can be somewhat faster than merge sort and about two or three times faster than heapsort.
-          <br>
-          <br>
-          Quicksort is a divide-and-conquer algorithm. It works by selecting a 'pivot' element from the array and partitioning the other elements into two sub-arrays, according to whether they are less than or greater than the pivot. For this reason, it is sometimes called partition-exchange sort. The sub-arrays are then sorted recursively. This can be done in-place, requiring small additional amounts of memory to perform the sorting. 
+          Quicksort is an in-place sorting algorithm. Developed by British
+          computer scientist Tony Hoare in 1959 and published in 1961, it is
+          still a commonly used algorithm for sorting. When implemented well, it
+          can be somewhat faster than merge sort and about two or three times
+          faster than heapsort.
+          <br />
+          <br />
+          Quicksort is a divide-and-conquer algorithm. It works by selecting a
+          'pivot' element from the array and partitioning the other elements
+          into two sub-arrays, according to whether they are less than or
+          greater than the pivot. For this reason, it is sometimes called
+          partition-exchange sort. The sub-arrays are then sorted recursively.
+          This can be done in-place, requiring small additional amounts of
+          memory to perform the sorting.
         </p>
+        <a href="https://en.wikipedia.org/wiki/Quicksort" target="_blank"
+          >Quick Sort Additional Resource</a
+        >
+        <br />
+        <br />
       </div>
       <div id="selection">
         <h3>Selection Sort Method</h3>
         <p>
-          In computer science, selection sort is an in-place comparison sorting algorithm. It has an O(n2) time complexity, which makes it inefficient on large lists, and generally performs worse than the similar insertion sort. Selection sort is noted for its simplicity and has performance advantages over more complicated algorithms in certain situations, particularly where auxiliary memory is limited.
-          <br>
-          <br>
-          The algorithm divides the input list into two parts: a sorted sublist of items which is built up from left to right at the front (left) of the list and a sublist of the remaining unsorted items that occupy the rest of the list. Initially, the sorted sublist is empty and the unsorted sublist is the entire input list. The algorithm proceeds by finding the smallest (or largest, depending on sorting order) element in the unsorted sublist, exchanging (swapping) it with the leftmost unsorted element (putting it in sorted order), and moving the sublist boundaries one element to the right.
+          In computer science, selection sort is an in-place comparison sorting
+          algorithm. It has an O(n2) time complexity, which makes it inefficient
+          on large lists, and generally performs worse than the similar
+          insertion sort. Selection sort is noted for its simplicity and has
+          performance advantages over more complicated algorithms in certain
+          situations, particularly where auxiliary memory is limited.
+          <br />
+          <br />
+          The algorithm divides the input list into two parts: a sorted sublist
+          of items which is built up from left to right at the front (left) of
+          the list and a sublist of the remaining unsorted items that occupy the
+          rest of the list. Initially, the sorted sublist is empty and the
+          unsorted sublist is the entire input list. The algorithm proceeds by
+          finding the smallest (or largest, depending on sorting order) element
+          in the unsorted sublist, exchanging (swapping) it with the leftmost
+          unsorted element (putting it in sorted order), and moving the sublist
+          boundaries one element to the right.
         </p>
+        <a href="https://en.wikipedia.org/wiki/Selection_sort" target="_blank"
+          >Selection Sort Additional Resource</a
+        >
+        <br />
+        <br />
       </div>
     </div>
-</body>
+  </body>
 </html>

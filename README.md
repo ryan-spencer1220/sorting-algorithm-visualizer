@@ -53,8 +53,7 @@ This web application was created to help users visualize the various differences
 
 ## Known Bugs
 
-- Buttons re-enable on quicksort algorithm
-- Quicksort colors do not match up in an intuitive way
+- No known bugs
 
 ### License
 
