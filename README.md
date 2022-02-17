@@ -40,20 +40,15 @@ This web application was created to help users visualize the various differences
 
 **Downloading**
 
-1. _In your browser, navigate to LINK, and click the green "Code" button, which will provide a drop down menu. Click on "Download ZIP" at the bottom of the menu, and save it to your desired location._
-
+1. _In your browser, navigate to LINK, and click the green "Code" button, which will provide a drop down menu. Click on "Download ZIP" at the bottom of the menu, and save it to your desired location.
 2. _Once downloaded, unzip and extract the files._
-
 3. _Follow the steps above to view, edit, and open the files as needed._
 
 **Build the Environment and Run the Project**
 
 1. _You will need to run the command "npm install" in your terminal to download the appropriate node modules._
-
 2. _You will then need to build the project using the command "npm run build"._
-
 3. _Once built, you can open dist/index.html in your browser._
-
 4. _To run a server view of the project, you can type the command "npm start" to witness and inspect any changes you wish to make in real time._
 
 ## Known Bugs
