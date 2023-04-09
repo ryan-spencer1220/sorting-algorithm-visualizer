@@ -4,10 +4,6 @@
 
 #### By Ryan Spencer, Andy Plymate, Zachary Green, Will Greenberg, Eric Crudup
 
-### _Link to GitHub Repository_
-
-- https://github.com/ryan-spencer1220/sorting-algorithm-visualizer
-
 ## Technologies Used
 
 - VS Code Software
